@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Files Fiddle</title>
+      <title>Portfolio</title>
+
+      <!-- logo -->
+      <link rel="icon" href="https://papercallio-production.s3.amazonaws.com/uploads/event/logo/786/frontend.png">
 
       <!-- stylesheet -->
       <link rel="stylesheet" href="style.css">
 
       <!-- google fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
-      
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+            rel="stylesheet">
+
       <!-- icons -->
       <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
@@ -24,68 +29,117 @@
       <!-- JQuery -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
 </head>
-<body>
-      
-      <div class="container">
 
+<body style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;"
+      unselectable="on" onselectstart="return false;" onmousedown="return false;" id="body" class="body">
+
+
+      <div class="container">
             <div class="loading-screen"></div>
-           
             <div class="loader">
                   <div class="ringOne ring">
-                        <img src="ring.png" alt="">
+                        <img src="./img/ring.png" alt="">
                   </div>
                   <div class="ringTwo ring">
-                        <img src="ring.png" alt="">
+                        <img src="./img/ring.png" alt="">
                   </div>
             </div>
 
-      </div>
 
-      <div class="logo">
-            <ion-icon name="git-compare"></ion-icon>FilesFiddle
-      </div>
+            <!-- <div class="contact">GET IN TOUCH</div> -->
 
-      <div class="contact">GET IN TOUCH</div>
-
-      <div class="menu"><ion-icon name="options"></ion-icon></div>
-
-      <div class="header">
-            
-            <h1 class="ml7" id="title">            
-                  <span class="text-wrapper">
-                        <span class="letters">The connected world</span>
-                  </span>
-            </h1>
-                            
-                            
-            <p id="tagline" class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim blanditiis voluptatum, magnam odio, tempora asperiores, quod quasi alias expedita esse eveniet impedit nihil quae nulla sint iure accusantium architecto aperiam.</p>
-            
-            <br><br>
-            
-            <p id="tagline" class="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla facere ad illo, perferendis impedit animi quasi iure provident! Iste, facere!</p>
-            
-            <div class="buttons">
-                  <button id="one">LEARN MORE</button>
-                  <button id="two">BUY NOW</button>
+            <div class="menu" id="menu">
+                  <ion-icon id="options" name="options"></ion-icon>
             </div>
 
+            <div class="header" id="header">
+
+                  <h1 class="ml7" id="title">
+                        <span class="text-wrapper">
+                              <span class="letter">Bohdan Asauliuk</span>
+                        </span>
+                  </h1>
+
+
+                  <p id="tagline" class="p1">
+                        Hard Skills: HTML, CSS(Sass), JS.
+                        <br>
+                        <br> Soft Skills: English.
+                  </p>
+
+                  <br><br><br>
+
+                  <p id="tagline" class="p2">You can check out my work down below!</p>
+
+
+                  <div class="circles">
+
+                        <div class="circle-multiple circle-multiple-1">
+                              <div class="circle circle-1"></div>
+                              <div class="circle circle-2"></div>
+                              <div class="circle circle-3"></div>
+                              <a href="about.html" class="btn-link about-me">ABOUT ME</a>
+                        </div>
+                        <div class="circle-multiple circle-multiple-2">
+                              <div class="circle circle-1"></div>
+                              <div class="circle circle-2"></div>
+                              <div class="circle circle-3"></div>
+                              <a href="portfolio.html" class="btn-link portfolio">PORTFOLIO</a>
+                        </div>
+                  </div>
+                  <div class="media">
+                        <ul>
+                              <li>
+                                    <a href="https://github.com/larnex">
+                                          <ion-icon name="logo-github"></ion-icon>
+                                    </a>
+                              </li>
+                              <li>
+                                    <a href="https://instagram.com/bogdan.asaulyuk">
+                                          <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                              </li>
+                              <li>
+                                    <a href="https://facebook.com/">
+                                          <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                              </li>
+
+                        </ul>
+                  </div>
+                  <div class="logo">
+                        <h1 class="logo-title" id="logo-title">Larnex</h1>
+                  </div>
+            </div>
       </div>
 
-      <div class="bottom-text">+0.00001db</div>
-
-      <div class="copyright">© 2019 by Codegrid. All rights reserved.</div>
 
 
-      <div class="media">
+      <!-- <div class="media">
             <ul>
-                  <li><ion-icon name="logo-facebook"></ion-icon></li>
-                  <li><ion-icon name="logo-instagram"></ion-icon></li>
-                  <li><ion-icon name="logo-twitter"></ion-icon></li>
-                  <li><ion-icon name="logo-youtube"></ion-icon></li>
+                  <li>
+                        <a href="https://github.com/larnex">
+                              <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                  </li>
+                  <li>
+                        <a href="https://instagram.com/bogdan.asaulyuk">
+                              <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                  </li>
+                  <li>
+                        <a href="https://facebook.com/">
+                              <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                  </li>
+
             </ul>
-      </div>
+      </div> -->
+
+
 
       <!-- js -->
       <script src="script.js"></script>
 </body>
+
 </html>
