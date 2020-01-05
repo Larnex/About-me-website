@@ -294,3 +294,18 @@ whiteModeToggler.addEventListener('click', function () {
 
 
 });
+
+// btnOneLink.addEventListener('click', function () {
+//       var t1 = new TimelineMax();
+
+//       t1.from(".circles .circle-multiple-1", 0.1, {
+//             delay: 0.1,
+//             opacity: 1,
+//             y: 140,
+//             ease: Expo.easeInOut
+//       }).to(".circles .circle-multiple-1", 0.1, {
+//             delay: 0.1,
+//             x: 140,
+//             ease: Expo.easeInOut
+//       })
+// });
