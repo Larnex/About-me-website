@@ -1,10 +1,17 @@
+body {
+  overflow-y: scroll;
+}
+
 
 .boxes {
-  display: flex;
-  width: calc(100% - 20px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   padding: 50px;
-  max-width: 1260px;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  justify-content: center;
   flex-wrap: wrap;
+  font-family: Roboto;
 }
 @media only screen and (max-width: 600px) {
   .boxes {
@@ -19,7 +26,7 @@
   backdrop-filter: saturate(180%) blur(10px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   margin: 0 20px 20px 0;
-  width: 400px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   opacity: 0.85;
