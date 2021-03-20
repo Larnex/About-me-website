@@ -126,3 +126,14 @@ a {
 .repository:hover {
   background-position: 0;
 }
+
+/* circles */
+.circles {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-link {
+  color: white;
+  border: none;
+}
