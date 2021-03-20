@@ -133,6 +133,20 @@ button {
   animation: psycho 2s linear 0.25s infinite;
 }
 
+.menu {
+  position: fixed;
+  color: #6adb9d;
+  right: 3.2rem;
+  top: 0.4rem;
+  line-height: 8rem;
+  z-index: 1;
+}
+
+.menu ion-icon {
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
 @keyframes psycho {
   0% {
     transform: rotate(0deg) scale(1) translate(0, 0);

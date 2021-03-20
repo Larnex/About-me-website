@@ -78,20 +78,18 @@ t0.from('.circles .circle-multiple-1', 0, {
   });
 
 var whiteModeToggler = document.getElementById('options');
-var bodyWhite = document.getElementById('hero');
-var textBlackTitle = document.getElementById('title');
-var textBlackParagraph = document.getElementById('tagline');
-var btnOneLink = document.querySelector('.home');
-var btnTwoLink = document.querySelector('.portfolio');
+var bodyWhite = document.getElementById('body');
+var box = document.querySelectorAll('.box');
+var btnLinkHome = document.querySelector('.btn-link');
 var toggle = false;
 
 whiteModeToggler.addEventListener('click', function () {
   bodyWhite.classList.toggle('white-background');
-  textBlackTitle.classList.toggle('black-text');
-  textBlackParagraph.classList.toggle('black-text');
-  // btnOne.classList.toggle('white-btn');
-  btnOneLink.classList.toggle('black-text');
-  btnTwoLink.classList.toggle('black-text');
+  btnLinkHome.classList.toggle('black-text');
+
+  for (let i = 0; i < box.length; i++) {
+    box[i].classList.toggle('white-box');
+  }
 
   function animation() {
     if (toggle === false) {
