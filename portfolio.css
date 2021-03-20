@@ -1,23 +1,27 @@
 body {
+  height: 100%;
   overflow-y: scroll;
 }
 
+#mainVideo {
+  display: none;
+}
 
 .boxes {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 50px;
+  display: flex;
   width: calc(100% - 20px);
+  padding: 50px;
+  padding-right: 30px;
   margin: 0 auto;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   font-family: Roboto;
 }
 @media only screen and (max-width: 600px) {
   .boxes {
     padding: 20px;
     padding-right: 0;
- }
+  }
 }
 .boxes .box {
   color: white;
@@ -26,24 +30,29 @@ body {
   backdrop-filter: saturate(180%) blur(10px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   margin: 0 20px 20px 0;
-  width: 350px;
+  width: 400px;
   display: flex;
   flex-direction: column;
+
   opacity: 0.85;
   transition: opacity 0.5s;
 }
 .boxes .box:hover {
   opacity: 1;
 }
-.boxes .box .image {
-  background: #69d570;
-  background: linear-gradient(326deg, rgba(105, 213, 112, 1) 0%, rgba(52, 141, 235, 1) 100%);
+.boxes .box .video {
   width: 100%;
-  padding-top: 56.25%;
+  height: 100%;
   cursor: pointer;
 }
+
+.boxes .box .video video {
+  width: 100%;
+  cursor: pointer;
+}
+
 .boxes .box .content-wrapper {
-  padding: 50px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -69,11 +78,51 @@ body {
 }
 .boxes .box .content-wrapper a {
   font-weight: 800;
-  color:rgb(194, 189, 181);
+  color: rgb(194, 189, 181);
   font-size: 19px;
   transition: color 0.5s;
   text-decoration: none;
 }
 .boxes .box .content-wrapper a:hover {
   color: #888;
+}
+
+a {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.repository:hover,
+.repository:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.repository {
+  border-color: #f1c40f;
+  color: #fff;
+  background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 300%;
+  transition: all 300ms ease-in-out;
+}
+
+.repository:hover {
+  background-position: 0;
 }
