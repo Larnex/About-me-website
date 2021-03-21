@@ -98,6 +98,7 @@ h1 {
   font-size: 1.6rem;
   grid-column: 2/3;
   grid-row: 3/4;
+  margin: 3rem;
 }
 
 #tagline:nth-of-type(2) {

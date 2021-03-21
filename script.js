@@ -10,64 +10,64 @@ text.forEach(function (char) {
 
 h1.innerHTML = result;
 
-TweenMax.to('.loading-screen', 4, {
-  delay: 3,
+TweenMax.to('.loading-screen', 2, {
+  delay: 2,
   top: '-200%',
   ease: Expo.easeInOut,
 });
 
-TweenMax.to('.circles', 4, {
-  delay: 5,
+TweenMax.to('.circles', 2, {
+  delay: 2,
   marginLeft: 0,
   ease: Expo.easeInOut,
 });
 
-TweenMax.from('.logo span:nth-child(1)', 3, {
-  delay: 11.5,
+TweenMax.from('.logo span:nth-child(1)', 1, {
+  delay: 2,
   opacity: 0,
   y: 20,
   ease: Expo.easeInOut,
 });
-TweenMax.from('.logo span:nth-child(2)', 3, {
-  delay: 12,
+TweenMax.from('.logo span:nth-child(2)', 1, {
+  delay: 3,
   opacity: 0,
   y: 20,
   ease: Expo.easeInOut,
 });
-TweenMax.from('.logo span:nth-child(3)', 3, {
-  delay: 12.5,
+TweenMax.from('.logo span:nth-child(3)', 1, {
+  delay: 3,
   opacity: 0,
   y: 20,
   ease: Expo.easeInOut,
 });
-TweenMax.from('.logo span:nth-child(4)', 3, {
-  delay: 13,
+TweenMax.from('.logo span:nth-child(4)', 1, {
+  delay: 3,
   opacity: 0,
   y: 20,
   ease: Expo.easeInOut,
 });
-TweenMax.from('.logo span:nth-child(5)', 3, {
-  delay: 13.5,
+TweenMax.from('.logo span:nth-child(5)', 1, {
+  delay: 3.5,
   opacity: 0,
   y: 20,
   ease: Expo.easeInOut,
 });
-TweenMax.from('.logo span:nth-child(6)', 3, {
-  delay: 14,
+TweenMax.from('.logo span:nth-child(6)', 1, {
+  delay: 4,
   opacity: 0,
   y: 20,
   ease: Expo.easeInOut,
 });
 
 TweenMax.from('.contact', 3, {
-  delay: 8.5,
+  delay: 4.5,
   opacity: 0,
   y: 20,
   ease: Expo.easeInOut,
 });
 
 TweenMax.from('.options', 3, {
-  delay: 8.4,
+  delay: 4.4,
   opacity: 0,
   y: 20,
   ease: Expo.easeInOut,
@@ -77,7 +77,7 @@ TweenMax.staggerFrom(
   '.media ul li',
   2,
   {
-    delay: 8.7,
+    delay: 4.7,
     opacity: 0,
     y: 20,
     ease: Power3.easeInOut,
@@ -86,49 +86,49 @@ TweenMax.staggerFrom(
 );
 
 TweenMax.from('.menu', 3, {
-  delay: 8.8,
+  delay: 4.8,
   opacity: 0,
   y: 20,
   ease: Expo.easeInOut,
 });
 
 TweenMax.from('.p1', 3, {
-  delay: 9,
+  delay: 4.5,
   opacity: 0,
   y: 20,
   ease: Expo.easeInOut,
 });
 
 TweenMax.from('.p2', 3, {
-  delay: 9.2,
+  delay: 4.2,
   opacity: 0,
   y: 20,
   ease: Expo.easeInOut,
 });
 
-TweenMax.from('#one', 3, {
-  delay: 9.4,
+TweenMax.from('#one', 1.5, {
+  delay: 4.4,
   opacity: 0,
   y: 20,
   ease: Expo.easeInOut,
 });
 
-TweenMax.from('#two', 3, {
-  delay: 9.7,
+TweenMax.from('#two', 1.5, {
+  delay: 4.7,
   opacity: 0,
   y: 20,
   ease: Expo.easeInOut,
 });
 
 TweenMax.from('.about-me', 4, {
-  delay: 6.3,
+  delay: 2.3,
   opacity: 0,
   // y: 100,
   ease: Expo.easeInOut,
 });
 
 TweenMax.from('.portfolio', 4, {
-  delay: 6.6,
+  delay: 2.6,
   opacity: 0,
   // y: 100,
   ease: Expo.easeInOut,
@@ -136,7 +136,7 @@ TweenMax.from('.portfolio', 4, {
 
 var t0 = new TimelineMax();
 
-t0.from('.circles .circle-multiple-1', 4, {
+t0.from('.circles .circle-multiple-1', 2, {
   delay: 0.4,
   opacity: 0,
   y: 40,
@@ -145,7 +145,7 @@ t0.from('.circles .circle-multiple-1', 4, {
 })
   .from(
     '.circles .circle-multiple-2',
-    4,
+    2,
     {
       delay: 0.9,
       opacity: 0,
@@ -155,14 +155,14 @@ t0.from('.circles .circle-multiple-1', 4, {
     },
     '-=5'
   )
-  .to('.circles .circle-multiple-1', 4, {
+  .to('.circles .circle-multiple-1', 2, {
     delay: 0.4,
     x: 0,
     ease: Expo.easeInOut,
   })
   .to(
     '.circles .circle-multiple-2',
-    4,
+    2,
     {
       delay: 0.9,
       x: 200,
@@ -173,7 +173,7 @@ t0.from('.circles .circle-multiple-1', 4, {
 
 var t1 = new TimelineMax();
 
-t1.from('.ringOne', 4, {
+t1.from('.ringOne', 2, {
   delay: 0.4,
   opacity: 0,
   y: 40,
@@ -181,7 +181,7 @@ t1.from('.ringOne', 4, {
 })
   .from(
     '.ringTwo',
-    4,
+    2,
     {
       delay: 0.9,
       opacity: 0,
@@ -190,7 +190,7 @@ t1.from('.ringOne', 4, {
     },
     '-=5'
   )
-  .to('.ringOne', 4, {
+  .to('.ringOne', 2, {
     delay: 0.4,
     x: 40,
     ease: Expo.easeInOut,
@@ -219,10 +219,10 @@ anime
     translateX: ['0.88rem', 0],
     translateZ: 0,
     rotateZ: [90, 0],
-    duration: 750,
+    duration: 350,
     easing: 'easeOutExpo',
     delay: function (el, i) {
-      return 9000 + 50 * i;
+      return 3000 + 50 * i;
     },
   });
 
