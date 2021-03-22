@@ -113,10 +113,6 @@
     font-size: 10px;
   }
 
-  body {
-    /* overflow: hidden; */
-  }
-
   #tagline {
     margin: 0;
     grid-row: 2/3;
@@ -192,7 +188,6 @@
 
   body {
     height: 100%;
-    /* overflow: hidden; */
   }
 
   #tagline {
